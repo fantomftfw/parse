@@ -86,15 +86,4 @@ def process_document():
                 os.remove(temp_file_path) # Remove temp_file_path
                 print(f"Removed temporary file: {temp_file_path}") # Log temp_file_path
             except OSError as e:
-                print(f"Error removing temporary file {temp_file_path}: {e}") # Log temp_file_path
-
-
-if __name__ == '__main__':
-    # Run Flask development server
-    # Host '0.0.0.0' makes it accessible from other containers/machines on the network
-    # Use port 5001 by default, common alternative to 5000
-    port = int(os.environ.get('PORT', 5001))
-    print(f"Starting Flask server on http://0.0.0.0:{port}")
-    # debug=True enables auto-reloading and provides detailed error pages
-    # Disable debug mode in production environments
-    app.run(host='0.0.0.0', port=port, debug=True) 
+                print(f"Error removing temporary file {temp_file_path}: {e}") # Log temp_file_path 

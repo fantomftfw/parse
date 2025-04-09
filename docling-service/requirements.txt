@@ -1,2 +1,4 @@
-Flask>=2.0
-docling>=2.0 # Assuming a recent version, adjust if needed based on install 
+    Flask>=2.0
+    docling>=2.0
+    pypdfium2>=4.0 # Keep pypdfium2 if we still need it, remove if not
+    gunicorn>=20.0 # <--- ADD THIS LINE
